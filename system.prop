@@ -1,11 +1,4 @@
-## Audio
-audio.offload.min.duration.secs=30
-aaudio.mmap_policy=2
-aaudio.mmap_exclusive_policy=2
-aaudio.hw_burst_min_usec=2000
-af.fast_track_multiplier=1
-
-## Dex2oat
+# Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
@@ -15,41 +8,28 @@ dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
-## BT
+# BT
 bluetooth.samsung_samplerate.supported=true
 
-## Charger
-ro.charger.enable_suspend=true
-
-## fastbootd
-ro.fastbootd.available=true
-
-## Graphics
-debug.sf.disable_backpressure=1
-debug.sf.latch_unsignaled=1
-persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.use_color_management=true
-
-## RIL
-persist.sys.fflag.override.settings_provider_model=false
-
-## Samsung Stuff
+# Samsung Stuff
 ro.product_ship=true
 config.disable_consumerir=true
 ro.vendor.cscsupported=1
 ro.cmc.device_type=pd
 ro.cmc.version=2.0
 
-## System
+# RIL
+persist.sys.fflag.override.settings_provider_model=false
+
+# One handed mode
+ro.support_one_handed_mode=true
+
+# System
 persist.sys.binary_xml=false
 
-## ADB on boot
-persist.service.adb.enable=1
-persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
-ro.debuggable=1
-ro.adb.secure=0
+# ADB on boot
+#persist.service.adb.enable=1
+#persist.service.debuggable=1
+#persist.sys.usb.config=mtp,adb
+#ro.debuggable=1
+#ro.adb.secure=0
