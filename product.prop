@@ -1,9 +1,5 @@
-# Surfaceflinger
-debug.sf.latch_unsignaled=1
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-
-# BT
-bluetooth.samsung_samplerate.supported=true
+# Enable unspecialized app process pool
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Telephony
 ro.telephony.default_network=10,10
@@ -12,9 +8,6 @@ ro.telephony.default_network=10,10
 ro.bluetooth.a2dp_offload.supported=false
 persist.bluetooth.a2dp_offload.disabled=true
 vendor.audio.feature.a2dp_offload.enable=false
-
-# Process pool
-persist.device_config.runtime_native.usap_pool_enabled=true
 
 # API 
 ro.product.first_api_level=29
