@@ -1,2 +1,5 @@
 soong_namespace {
+    imports: [
+        "vendor/samsung/universal9810-common",
+    ],
 }
